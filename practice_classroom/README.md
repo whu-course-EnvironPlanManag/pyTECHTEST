@@ -8,12 +8,12 @@
 
 ## 🎯 实训目标与两大练习案例
 
-课程精选了 US DOE 官方发布的两个经典黄金基准案例（Excel 原始文件已内置于 `data/excel_templates/` 目录中）：
+课程精选了 US DOE 官方发布的两个经典黄金基准案例（Excel 原始文件已存放在本目录 `TECHTEST_tool-Conceived-by-USDOE/` 中，便于随堂随时打开对照）：
 
 | 实验编号 | 案例名称 | 对应官方 Excel 文件 | 关键考查机制 |
 | :--- | :--- | :--- | :--- |
-| **案例一 (Case 1)** | **工业余热回收冷却系统**<br>(Waste Heat Recovery) | `data/excel_templates/Example TECHTEST 1.0 Waste Heat Recovery (Process).xlsx` | Method 1 全量分析法：设备 CapEx 直线折旧与 5% 维护费、公用工程（电力/冷却水）分项清单积分、投资回收期计算。 |
-| **案例二 (Case 2)** | **先进催化剂合成**<br>(Manufacturilium Catalyst) | `data/excel_templates/TECHTEST 1.0 Manufacturilium Catalyst.xlsx` | 复杂工程工况：**非等量替代比（1.35x 等效系数）**、**原材料回收抵扣（负单价 Credit -$500）**、MFI 隐含碳多原料生命周期追踪。 |
+| **案例一 (Case 1)** | **工业余热回收冷却系统**<br>(Waste Heat Recovery) | [`TECHTEST_tool-Conceived-by-USDOE/Example TECHTEST 1.0 Waste Heat Recovery (Process).xlsx`](TECHTEST_tool-Conceived-by-USDOE/Example%20TECHTEST%201.0%20Waste%20Heat%20Recovery%20(Process).xlsx) | Method 1 全量分析法：设备 CapEx 直线折旧与 5% 维护费、公用工程（电力/冷却水）分项清单积分、投资回收期计算。 |
+| **案例二 (Case 2)** | **先进催化剂合成**<br>(Manufacturilium Catalyst) | [`TECHTEST_tool-Conceived-by-USDOE/TECHTEST 1.0 Manufacturilium Catalyst.xlsx`](TECHTEST_tool-Conceived-by-USDOE/TECHTEST%201.0%20Manufacturilium%20Catalyst.xlsx) | 复杂工程工况：**非等量替代比（1.35x 等效系数）**、**原材料回收抵扣（负单价 Credit -$500）**、MFI 隐含碳多原料生命周期追踪。 |
 
 ---
 

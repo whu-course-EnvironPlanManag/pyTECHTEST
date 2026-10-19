@@ -36,6 +36,7 @@ pyTECHTEST/
 │
 ├── practice_classroom/           # 🌟 学生分支练习实训专区
 │   ├── README.md                 # 实训任务说明与自测规范
+│   ├── TECHTEST_tool-Conceived-by-USDOE/ # 原始官方 Excel 案例文件 (供学生直接对照)
 │   ├── case1_waste_heat/         # 案例一：工业余热回收模型练习
 │   │   ├── README.md             # 案例一参数映射说明与对标目标
 │   │   ├── student_template.yaml # 学生填空答题模板 (含详细 TODO)
