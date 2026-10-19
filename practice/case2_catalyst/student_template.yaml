@@ -1,0 +1,233 @@
+# ==============================================================================
+# 《环境规划与管理》随堂实训案例二：先进催化剂合成模型学生配置文件模板
+# 重点考查：非等量替代比 (Equivalence Ratio 1.35) 与 负单价回收抵扣 (-$500 Credit)
+# ==============================================================================
+
+project:
+  title: "Advanced Manufacturelium Catalyst"
+  lead_organization: "Silverlake National Labs"
+  partners: "Silverlake Manufacturilium Producers"
+  principal_investigator: "Bruce Paine"
+  pi_organization: "Palms R&D"
+  technology_manager: ""
+  start_date: "2020-08-21"
+  end_date: "2025-01-08"
+  funding_mechanism: "R&D Project"
+  trl: 3
+
+market:
+  generic_end_use_product: "Catalyst for Manufacturelium"
+  annual_us_market_volume: 8200000.0   # 全美年化需求量 (kg)
+  market_units: "kg"
+  target_penetration_fraction: 0.70    # 目标市场渗透率 (70%)
+  market_description: "Catalyst market for advanced industrial chemical synthesis"
+
+functional_unit:
+  product_name_new_tech: "Manufacturelium Catalyst"
+  product_name_benchmark: "Manufacturelium Catalyst"
+  functional_unit_description: "10 kg of catalyst for chemical processing"
+  reference_volume: 10.0               # 评估基准量为 10 kg
+  reference_volume_unit: "kg"
+  # TODO: [学生任务 2.1] 填入非等量功能替代比 (10 kg 新技术等效替代 13.5 kg 传统技术，此处填 1.35)
+  equivalence_ratio: 1.35
+
+grid_scenario: "2022_default"
+
+new_technology:
+  annual_facility_production: 86655.0
+  capex_maintenance_rate: 0.05
+  capex_items:
+    - name: "Purchased Equipment"
+      category: "Process Equipment"
+      purchase_price: 3700000.0
+      lifetime_years: 20.0
+    - name: "Installation"
+      category: "Process Equipment"
+      purchase_price: 1850000.0
+      lifetime_years: 20.0
+    - name: "Piping"
+      category: "Process Equipment"
+      purchase_price: 296000.0
+      lifetime_years: 20.0
+    - name: "Control Systems"
+      category: "Process Equipment"
+      purchase_price: 370000.0
+      lifetime_years: 20.0
+    - name: "Power Equipment"
+      category: "Process Equipment"
+      purchase_price: 370000.0
+      lifetime_years: 20.0
+    - name: "Engineering"
+      category: "Process Equipment"
+      purchase_price: 555000.0
+      lifetime_years: 100.0
+    - name: "Design"
+      category: "Process Equipment"
+      purchase_price: 481000.0
+      lifetime_years: 100.0
+    - name: "Procurment"
+      category: "Process Equipment"
+      purchase_price: 185000.0
+      lifetime_years: 100.0
+    - name: "Construction"
+      category: "Process Equipment"
+      purchase_price: 1295000.0
+      lifetime_years: 100.0
+    - name: "Land"
+      category: "Process Equipment"
+      purchase_price: 370000.0
+      lifetime_years: 100.0
+    - name: "Waste Treatment"
+      category: "Process Equipment"
+      purchase_price: 370000.0
+      lifetime_years: 20.0
+    - name: "Service Facilities"
+      category: "Process Equipment"
+      purchase_price: 222000.0
+      lifetime_years: 20.0
+  labor:
+    fte_count: 6.8
+    average_annual_salary: 90000.0
+    fringe_overhead_rate: 0.72
+  materials:
+    - name: "Beryllium"
+      amount_per_ref_volume: 2.0
+      unit: "kg"
+      unit_price: 45.0
+      embodied_energy_factor: 4000.0
+      embodied_ghg_factor: 16.0
+    - name: "Vanadium"
+      amount_per_ref_volume: 5.4
+      unit: "kg"
+      unit_price: 103.0
+      embodied_energy_factor: 20000.0
+      embodied_ghg_factor: 40.0
+    - name: "Berkelium"
+      amount_per_ref_volume: 1.0
+      unit: "kg"
+      unit_price: 2000.0
+      embodied_energy_factor: 90000.0
+      embodied_ghg_factor: 20.0
+    - name: "Softened Water"
+      amount_per_ref_volume: 7.0
+      unit: "kg"
+      unit_price: 0.98
+      embodied_energy_factor: 115.0
+      embodied_ghg_factor: 0.25
+    # TODO: [学生任务 2.2] 填入副产物清洁催化剂回收抵扣项 (负单价 -$500/Credit)
+    - name: "*Clean Catalyst Credit*"
+      amount_per_ref_volume: 1.0
+      unit: "Credit"
+      unit_price: -500.0
+      embodied_energy_factor: 0.0
+      embodied_ghg_factor: 0.0
+  energy_items:
+    - energy_source: "Electricity"
+      amount_per_ref_volume: 0.3
+      unit_price: 21.043376
+      custom_emission_factor: 108.5873
+    - energy_source: "Natural Gas"
+      amount_per_ref_volume: 1.0
+      unit_price: 5.79403
+      custom_emission_factor: 130.6149
+    - energy_source: "Steam and Hot Water**"
+      amount_per_ref_volume: 0.1
+      unit_price: 4.7
+      custom_emission_factor: 146.39
+  other_recurring_opex: 10000.0
+
+commercial_benchmark:
+  annual_facility_production: 86655.0
+  capex_maintenance_rate: 0.05
+  capex_items:
+    - name: "Purchased Equipment"
+      category: "Process Equipment"
+      purchase_price: 3700000.0
+      lifetime_years: 20.0
+    - name: "Installation"
+      category: "Process Equipment"
+      purchase_price: 1850000.0
+      lifetime_years: 20.0
+    - name: "Piping"
+      category: "Process Equipment"
+      purchase_price: 296000.0
+      lifetime_years: 20.0
+    - name: "Control Systems"
+      category: "Process Equipment"
+      purchase_price: 370000.0
+      lifetime_years: 20.0
+    - name: "Power Equipment"
+      category: "Process Equipment"
+      purchase_price: 370000.0
+      lifetime_years: 20.0
+    - name: "Engineering"
+      category: "Process Equipment"
+      purchase_price: 555000.0
+      lifetime_years: 100.0
+    - name: "Design"
+      category: "Process Equipment"
+      purchase_price: 481000.0
+      lifetime_years: 100.0
+    - name: "Procurment"
+      category: "Process Equipment"
+      purchase_price: 185000.0
+      lifetime_years: 100.0
+    - name: "Construction"
+      category: "Process Equipment"
+      purchase_price: 1295000.0
+      lifetime_years: 100.0
+    - name: "Land"
+      category: "Process Equipment"
+      purchase_price: 370000.0
+      lifetime_years: 100.0
+    - name: "Waste Treatment"
+      category: "Process Equipment"
+      purchase_price: 370000.0
+      lifetime_years: 20.0
+    - name: "Service Facilities"
+      category: "Process Equipment"
+      purchase_price: 222000.0
+      lifetime_years: 20.0
+  labor:
+    fte_count: 7.5
+    average_annual_salary: 85000.0
+    fringe_overhead_rate: 0.72
+  materials:
+    - name: "Platinum"
+      amount_per_ref_volume: 3.0
+      unit: "kg"
+      unit_price: 800.0
+      embodied_energy_factor: 100900.0
+      embodied_ghg_factor: 500.0
+    - name: "Alumina"
+      amount_per_ref_volume: 6.5
+      unit: "kg"
+      unit_price: 1.13
+      embodied_energy_factor: 9000.0
+      embodied_ghg_factor: 1.2
+    - name: "Trimethylaluminum"
+      amount_per_ref_volume: 2.3
+      unit: "kg"
+      unit_price: 114.0
+      embodied_energy_factor: 4000.0
+      embodied_ghg_factor: 6.4
+    - name: "Process Water"
+      amount_per_ref_volume: 6.0
+      unit: "kg"
+      unit_price: 0.0
+      embodied_energy_factor: 11.9
+      embodied_ghg_factor: 0.3
+  energy_items:
+    - energy_source: "Electricity"
+      amount_per_ref_volume: 0.05
+      unit_price: 21.043376
+      custom_emission_factor: 108.5873
+    - energy_source: "Natural Gas"
+      amount_per_ref_volume: 1.0
+      unit_price: 5.79403
+      custom_emission_factor: 130.6149
+    - energy_source: "Steam and Hot Water**"
+      amount_per_ref_volume: 0.8
+      unit_price: 4.7
+      custom_emission_factor: 146.39
+  other_recurring_opex: 10000.0

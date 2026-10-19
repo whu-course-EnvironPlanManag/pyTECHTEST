@@ -1,0 +1,157 @@
+{
+  "greenhouse_gases": {
+    "Carbon dioxide": {
+      "formula": "CO2",
+      "gwp_100yr": 1.0,
+      "source": "2022 IPCC's 6th Assessment Report (AR6); Annex II; Table 9"
+    },
+    "Methane": {
+      "formula": "CH4",
+      "gwp_100yr": 27.0,
+      "source": "2022 IPCC's 6th Assessment Report (AR6); Annex II; Table 9"
+    },
+    "Nitrous oxide": {
+      "formula": "N2O",
+      "gwp_100yr": 273.0,
+      "source": "2022 IPCC's 6th Assessment Report (AR6); Annex II; Table 9"
+    },
+    "Nitrogen trifluoride": {
+      "formula": "NF3",
+      "gwp_100yr": 17423.0,
+      "source": "2022 IPCC's 6th Assessment Report (AR6); Annex II; Table 9"
+    },
+    "Sulphur hexafluoride": {
+      "formula": "SF6",
+      "gwp_100yr": 25184.0,
+      "source": "2022 IPCC's 6th Assessment Report (AR6); Annex II; Table 9"
+    }
+  },
+  "stationary_combustion_factors": {
+    "Bitumen (asphalt)": {
+      "sector": "Industrial",
+      "category": "Petroleum",
+      "co2_kg_per_tj": 80700.0,
+      "ch4_kg_per_tj": 3.0,
+      "n2o_kg_per_tj": 0.6
+    },
+    "Gas / Diesel Oil (distillate fuel oil)": {
+      "sector": "Industrial",
+      "category": "Petroleum",
+      "co2_kg_per_tj": 74100.0,
+      "ch4_kg_per_tj": 3.0,
+      "n2o_kg_per_tj": 0.6
+    },
+    "Liquified Petroleum Gas": {
+      "sector": "Industrial",
+      "category": "Petroleum",
+      "co2_kg_per_tj": 63100.0,
+      "ch4_kg_per_tj": 1.0,
+      "n2o_kg_per_tj": 0.1
+    },
+    "Kerosene": {
+      "sector": "Industrial",
+      "category": "Petroleum",
+      "co2_kg_per_tj": 71900.0,
+      "ch4_kg_per_tj": 3.0,
+      "n2o_kg_per_tj": 0.6
+    },
+    "Motor Gasoline": {
+      "sector": "Industrial",
+      "category": "Petroleum",
+      "co2_kg_per_tj": 69300.0,
+      "ch4_kg_per_tj": 3.0,
+      "n2o_kg_per_tj": 0.6
+    },
+    "Petroleum Coke": {
+      "sector": "Industrial",
+      "category": "Petroleum",
+      "co2_kg_per_tj": 97500.0,
+      "ch4_kg_per_tj": 3.0,
+      "n2o_kg_per_tj": 0.6
+    },
+    "Residual Fuel Oil": {
+      "sector": "Industrial",
+      "category": "Petroleum",
+      "co2_kg_per_tj": 77400.0,
+      "ch4_kg_per_tj": 3.0,
+      "n2o_kg_per_tj": 0.6
+    },
+    "Other Petroleum": {
+      "sector": "Industrial",
+      "category": "Petroleum",
+      "co2_kg_per_tj": 73300.0,
+      "ch4_kg_per_tj": 3.0,
+      "n2o_kg_per_tj": 0.6
+    },
+    "Coke Oven Coke and Lignite Coke": {
+      "sector": "Industrial",
+      "category": "Coal",
+      "co2_kg_per_tj": 107000.0,
+      "ch4_kg_per_tj": 10.0,
+      "n2o_kg_per_tj": 1.5
+    },
+    "Bituminous Coal": {
+      "sector": "Industrial",
+      "category": "Coal",
+      "co2_kg_per_tj": 94600.0,
+      "ch4_kg_per_tj": 3.0,
+      "n2o_kg_per_tj": 1.5
+    },
+    "Anthracite": {
+      "sector": "Industrial",
+      "category": "Coal",
+      "co2_kg_per_tj": 98300.0,
+      "ch4_kg_per_tj": 3.0,
+      "n2o_kg_per_tj": 1.5
+    },
+    "Lignite": {
+      "sector": "Industrial",
+      "category": "Coal",
+      "co2_kg_per_tj": 101000.0,
+      "ch4_kg_per_tj": 3.0,
+      "n2o_kg_per_tj": 1.5
+    },
+    "Natural Gas": {
+      "sector": "Industrial",
+      "category": "Natural Gas",
+      "co2_kg_per_tj": 56100.0,
+      "ch4_kg_per_tj": 1.0,
+      "n2o_kg_per_tj": 0.1
+    },
+    "Municipal Waste (biomass)": {
+      "sector": "Industrial",
+      "category": "Renewable Fuels",
+      "co2_kg_per_tj": 100000.0,
+      "ch4_kg_per_tj": 30.0,
+      "n2o_kg_per_tj": 4.0
+    },
+    "Industrial Wastes": {
+      "sector": "Industrial",
+      "category": "Renewable Fuels",
+      "co2_kg_per_tj": 143000.0,
+      "ch4_kg_per_tj": 30.0,
+      "n2o_kg_per_tj": 4.0
+    },
+    "Wood / Wood Waste": {
+      "sector": "Industrial",
+      "category": "Renewable Fuels",
+      "co2_kg_per_tj": 112000.0,
+      "ch4_kg_per_tj": 30.0,
+      "n2o_kg_per_tj": 4.0
+    },
+    "Biogasoline & Biodiesel": {
+      "sector": "Industrial",
+      "category": "Renewable Fuels",
+      "co2_kg_per_tj": 70800.0,
+      "ch4_kg_per_tj": 3.0,
+      "n2o_kg_per_tj": 0.6
+    },
+    "Steam and Hot Water**": {
+      "sector": "Industrial",
+      "category": "Steam",
+      "co2_kg_per_tj": 62872.037914691944,
+      "ch4_kg_per_tj": 1.1848341232227488,
+      "n2o_kg_per_tj": 0.11848341232227488
+    }
+  }
+}

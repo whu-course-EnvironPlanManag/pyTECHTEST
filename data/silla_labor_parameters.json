@@ -1,0 +1,42 @@
+{
+  "reference": "Harry Silla, Chemical Process Engineering: Design and Economics (Marcel Dekker, 2003)",
+  "base_year": 1952,
+  "default_productivity_growth_p": 0.02,
+  "default_supervision_rate": 0.2,
+  "default_fringe_overhead_rate": 0.72,
+  "annual_working_hours_per_fte": 2080.0,
+  "capacity_threshold_kg_per_hr": 5670.0,
+  "capacity_threshold_lb_per_hr": 12500.0,
+  "exponents_and_k": {
+    "batch": {
+      "low_capacity": {
+        "b": 0.76,
+        "K": 0.401
+      },
+      "high_capacity": {
+        "b": 0.84,
+        "K": 0.536
+      }
+    },
+    "continuous_automated": {
+      "low_capacity": {
+        "b": 0.76,
+        "K": 0.296
+      },
+      "high_capacity": {
+        "b": 0.84,
+        "K": 0.396
+      }
+    },
+    "continuous_highly_automated": {
+      "low_capacity": {
+        "b": 0.76,
+        "K": 0.174
+      },
+      "high_capacity": {
+        "b": 0.84,
+        "K": 0.233
+      }
+    }
+  }
+}

@@ -1,0 +1,102 @@
+project:
+  title: "Waste Heat Recovery Cooling in Beverage Manufacturing"
+  lead_organization: "Hypothetical Organization"
+  partners: "Staff"
+  principal_investigator: "John Doe"
+  pi_organization: "Hypothetical National Laboratory"
+  technology_manager: "Jane Doe"
+  start_date: "2023-01-01"
+  end_date: "2025-01-01"
+  funding_mechanism: "R&D Project"
+  trl: 5
+
+market:
+  generic_end_use_product: "Cooled Waste Water"
+  annual_us_market_volume: 10000.0
+  market_units: "Million Gallons"
+  target_penetration_fraction: 0.10
+  market_description: "Industrial wastewater cooling in food and beverage plants"
+
+functional_unit:
+  product_name_new_tech: "Cooled Waste Water"
+  product_name_benchmark: "Cooled Waste Water"
+  functional_unit_description: "Cooling 2 Million Gallons of wastewater"
+  reference_volume: 2.0
+  reference_volume_unit: "Million Gallons"
+  equivalence_ratio: 1.0
+
+grid_scenario: "2022_default"
+
+new_technology:
+  annual_facility_production: 730.0
+  capex_maintenance_rate: 0.05
+  capex_items:
+    - name: "Waste Heat Recovery System (e.g. IHP)"
+      category: "Process Equipment"
+      purchase_price: 254305.5984555985
+      lifetime_years: 10.0
+  labor:
+    fte_count: 0.009615384615384616
+    average_annual_salary: 75000.0
+    fringe_overhead_rate: 0.72
+  materials:
+    - name: "Elastomer"
+      amount_per_ref_volume: 0.16056986301369863
+      unit: "kg"
+      unit_price: 5.545
+      embodied_energy_factor: 94781.7
+      embodied_ghg_factor: 0.0
+    - name: "Low alloyed steel"
+      amount_per_ref_volume: 0.32113972602739727
+      unit: "kg"
+      unit_price: 1.37
+      embodied_energy_factor: 19051.124118
+      embodied_ghg_factor: 0.0
+    - name: "Reinforced Steel"
+      amount_per_ref_volume: 1.3046301369863014
+      unit: "kg"
+      unit_price: 1.37
+      embodied_energy_factor: 19051.1
+      embodied_ghg_factor: 0.0
+  energy_items:
+    - energy_source: "Electricity"
+      amount_per_ref_volume: 1548.8
+      unit_price: 0.0718
+  other_recurring_opex: 0.0
+
+commercial_benchmark:
+  annual_facility_production: 730.0
+  capex_maintenance_rate: 0.05
+  capex_items:
+    - name: "Evaporative condensers (4 total)"
+      category: "Process Equipment"
+      purchase_price: 1000000.0
+      lifetime_years: 25.0
+  labor:
+    fte_count: 0.03317307692307692
+    average_annual_salary: 75000.0
+    fringe_overhead_rate: 0.72
+  materials:
+    - name: "Steel low Alloy"
+      amount_per_ref_volume: 0.31749784111686646
+      unit: "kg"
+      unit_price: 1.37
+      embodied_energy_factor: 19051.1
+      embodied_ghg_factor: 0.0
+    - name: "Stainless Steel"
+      amount_per_ref_volume: 0.34946466844392127
+      unit: "kg"
+      unit_price: 6.15
+      embodied_energy_factor: 53741.394
+      embodied_ghg_factor: 0.0
+    - name: "Aluminium"
+      amount_per_ref_volume: 0.39875731544863013
+      unit: "kg"
+      unit_price: 9.16
+      embodied_energy_factor: 146912.1
+      embodied_ghg_factor: 0.0
+  energy_items:
+    - energy_source: "Electricity"
+      amount_per_ref_volume: 3758.4
+      unit_price: 0.0718
+  other_recurring_opex: 0.0

@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pytechtest"
+version = "1.0.0"
+description = "US DOE TECHTEST 1.0 (Techno-economic, Energy & Carbon Heuristic Tool for Early Stage Technologies) Python Implementation"
+readme = "README.md"
+authors = [
+    { name = "Wuhan University Course Cohort - Environmental Planning and Management", email = "siqi.tang@whu.edu.cn" }
+]
+license = { text = "MIT" }
+requires-python = ">=3.9"
+dependencies = [
+    "pydantic>=2.0.0",
+    "openpyxl>=3.1.0",
+    "pyyaml>=6.0.0",
+    "rich>=13.0.0",
+    "numpy>=1.24.0",
+    "matplotlib>=3.7.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "black",
+    "flake8"
+]
+
+[project.scripts]
+pytechtest = "pytechtest.cli:main"
+techtest = "pytechtest.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["pytechtest*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+filterwarnings = [
+    "ignore::UserWarning"
+]

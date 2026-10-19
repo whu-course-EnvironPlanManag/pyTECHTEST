@@ -1,0 +1,49 @@
+{
+  "technology_readiness_levels": [
+    {
+      "trl": 1,
+      "title": "TRL 1",
+      "description": "Basic principles observed and reported."
+    },
+    {
+      "trl": 2,
+      "title": "TRL 2",
+      "description": "Technology concept and/or application formulated."
+    },
+    {
+      "trl": 3,
+      "title": "TRL 3",
+      "description": "Experimental critical function (and/or characteristic) proof of concept"
+    },
+    {
+      "trl": 4,
+      "title": "TRL 4",
+      "description": "Component and/or system validation in laboratory environment"
+    },
+    {
+      "trl": 5,
+      "title": "TRL 5",
+      "description": "Technology validation in relevant environment"
+    },
+    {
+      "trl": 6,
+      "title": "TRL 6",
+      "description": "Pilot-scale validation in relevant environment"
+    },
+    {
+      "trl": 7,
+      "title": "TRL 7",
+      "description": "Full-scale demonstration in relevant environment"
+    },
+    {
+      "trl": 8,
+      "title": "TRL 8",
+      "description": "Actual system qualified and demonstrated"
+    },
+    {
+      "trl": 9,
+      "title": "TRL 9",
+      "description": "Actual system qualified and demonstrated"
+    }
+  ]
+}

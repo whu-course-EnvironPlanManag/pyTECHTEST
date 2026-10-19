@@ -1,0 +1,188 @@
+{
+  "scenarios": {
+    "2022_default": {
+      "Coal": {
+        "share": 0.2187093409966154,
+        "emission_factor_lb_co2e_per_mmbtu": 234.357293,
+        "emission_factor_lb_co2e_per_kwh": 0.799660362451606
+      },
+      "Petroleum": {
+        "share": 0.004570879407585814,
+        "emission_factor_lb_co2e_per_mmbtu": 177.08288662500001,
+        "emission_factor_lb_co2e_per_kwh": 0.6042319549344007
+      },
+      "Natural Gas": {
+        "share": 0.38336008221171747,
+        "emission_factor_lb_co2e_per_mmbtu": 130.615367,
+        "emission_factor_lb_co2e_per_kwh": 0.44567817958611394
+      },
+      "Other Gases": {
+        "share": 0.0027459430184191102,
+        "emission_factor_lb_co2e_per_mmbtu": 127.126367,
+        "emission_factor_lb_co2e_per_kwh": 0.433773216148114
+      },
+      "Nuclear": {
+        "share": 0.18937695407879895,
+        "emission_factor_lb_co2e_per_mmbtu": 7.760718,
+        "emission_factor_lb_co2e_per_kwh": 0.026480671837956
+      },
+      "Hydropower": {
+        "share": 0.06333033618364256,
+        "emission_factor_lb_co2e_per_mmbtu": 15.521436,
+        "emission_factor_lb_co2e_per_kwh": 0.052961343675912
+      },
+      "Biomass - Wood": {
+        "share": 0.009046088288551978,
+        "emission_factor_lb_co2e_per_mmbtu": 148.747095,
+        "emission_factor_lb_co2e_per_kwh": 0.50754621022749
+      },
+      "Biomass - Waste": {
+        "share": 0.004576529919240423,
+        "emission_factor_lb_co2e_per_mmbtu": 148.747095,
+        "emission_factor_lb_co2e_per_kwh": 0.50754621022749
+      },
+      "Geothermal": {
+        "share": 0.003951776758902173,
+        "emission_factor_lb_co2e_per_mmbtu": 24.575607,
+        "emission_factor_lb_co2e_per_kwh": 0.083855460820194
+      },
+      "Solar": {
+        "share": 0.027908981221446635,
+        "emission_factor_lb_co2e_per_mmbtu": 31.042872,
+        "emission_factor_lb_co2e_per_kwh": 0.105922687351824
+      },
+      "Wind": {
+        "share": 0.09242308791507937,
+        "emission_factor_lb_co2e_per_mmbtu": 7.1139915,
+        "emission_factor_lb_co2e_per_kwh": 0.024273949184793
+      }
+    },
+    "moderate": {
+      "Coal": {
+        "share": 0.0891,
+        "emission_factor_lb_co2e_per_mmbtu": 234.357293,
+        "emission_factor_lb_co2e_per_kwh": 0.799660362451606
+      },
+      "Petroleum": {
+        "share": 0.0099,
+        "emission_factor_lb_co2e_per_mmbtu": 177.08288662500001,
+        "emission_factor_lb_co2e_per_kwh": 0.6042319549344007
+      },
+      "Natural Gas": {
+        "share": 0.1683,
+        "emission_factor_lb_co2e_per_mmbtu": 130.615367,
+        "emission_factor_lb_co2e_per_kwh": 0.44567817958611394
+      },
+      "Other Gases": {
+        "share": 0.0,
+        "emission_factor_lb_co2e_per_mmbtu": 127.126367,
+        "emission_factor_lb_co2e_per_kwh": 0.433773216148114
+      },
+      "Nuclear": {
+        "share": 0.099,
+        "emission_factor_lb_co2e_per_mmbtu": 7.760718,
+        "emission_factor_lb_co2e_per_kwh": 0.026480671837956
+      },
+      "Hydropower": {
+        "share": 0.148525,
+        "emission_factor_lb_co2e_per_mmbtu": 15.521436,
+        "emission_factor_lb_co2e_per_kwh": 0.052961343675912
+      },
+      "Biomass - Wood": {
+        "share": 0.0198,
+        "emission_factor_lb_co2e_per_mmbtu": 148.747095,
+        "emission_factor_lb_co2e_per_kwh": 0.50754621022749
+      },
+      "Biomass - Waste": {
+        "share": 0.0198,
+        "emission_factor_lb_co2e_per_mmbtu": 148.747095,
+        "emission_factor_lb_co2e_per_kwh": 0.50754621022749
+      },
+      "Geothermal": {
+        "share": 0.148525,
+        "emission_factor_lb_co2e_per_mmbtu": 24.575607,
+        "emission_factor_lb_co2e_per_kwh": 0.083855460820194
+      },
+      "Solar": {
+        "share": 0.148525,
+        "emission_factor_lb_co2e_per_mmbtu": 31.042872,
+        "emission_factor_lb_co2e_per_kwh": 0.105922687351824
+      },
+      "Wind": {
+        "share": 0.148525,
+        "emission_factor_lb_co2e_per_mmbtu": 7.1139915,
+        "emission_factor_lb_co2e_per_kwh": 0.024273949184793
+      }
+    },
+    "net_zero": {
+      "Coal": {
+        "share": 0.01,
+        "emission_factor_lb_co2e_per_mmbtu": 234.357293,
+        "emission_factor_lb_co2e_per_kwh": 0.799660362451606
+      },
+      "Petroleum": {
+        "share": 0.0,
+        "emission_factor_lb_co2e_per_mmbtu": 177.08288662500001,
+        "emission_factor_lb_co2e_per_kwh": 0.6042319549344007
+      },
+      "Natural Gas": {
+        "share": 0.01,
+        "emission_factor_lb_co2e_per_mmbtu": 130.615367,
+        "emission_factor_lb_co2e_per_kwh": 0.44567817958611394
+      },
+      "Other Gases": {
+        "share": 0.0,
+        "emission_factor_lb_co2e_per_mmbtu": 127.126367,
+        "emission_factor_lb_co2e_per_kwh": 0.433773216148114
+      },
+      "Nuclear": {
+        "share": 0.08,
+        "emission_factor_lb_co2e_per_mmbtu": 7.760718,
+        "emission_factor_lb_co2e_per_kwh": 0.026480671837956
+      },
+      "Hydropower": {
+        "share": 0.2125,
+        "emission_factor_lb_co2e_per_mmbtu": 15.521436,
+        "emission_factor_lb_co2e_per_kwh": 0.052961343675912
+      },
+      "Biomass - Wood": {
+        "share": 0.025,
+        "emission_factor_lb_co2e_per_mmbtu": 148.747095,
+        "emission_factor_lb_co2e_per_kwh": 0.50754621022749
+      },
+      "Biomass - Waste": {
+        "share": 0.025,
+        "emission_factor_lb_co2e_per_mmbtu": 148.747095,
+        "emission_factor_lb_co2e_per_kwh": 0.50754621022749
+      },
+      "Geothermal": {
+        "share": 0.2125,
+        "emission_factor_lb_co2e_per_mmbtu": 24.575607,
+        "emission_factor_lb_co2e_per_kwh": 0.083855460820194
+      },
+      "Solar": {
+        "share": 0.2125,
+        "emission_factor_lb_co2e_per_mmbtu": 31.042872,
+        "emission_factor_lb_co2e_per_kwh": 0.105922687351824
+      },
+      "Wind": {
+        "share": 0.2125,
+        "emission_factor_lb_co2e_per_mmbtu": 7.1139915,
+        "emission_factor_lb_co2e_per_kwh": 0.024273949184793
+      }
+    }
+  },
+  "emission_factors_lb_co2e_per_mmbtu": {
+    "Coal": 234.357293,
+    "Petroleum": 177.08288662500001,
+    "Natural Gas": 130.615367,
+    "Other Gases": 127.126367,
+    "Nuclear": 7.760718,
+    "Hydropower": 15.521436,
+    "Biomass - Wood": 148.747095,
+    "Biomass - Waste": 148.747095,
+    "Geothermal": 24.575607,
+    "Solar": 31.042872,
+    "Wind": 7.1139915
+  }
+}

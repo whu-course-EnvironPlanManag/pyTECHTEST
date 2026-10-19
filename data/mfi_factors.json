@@ -1,0 +1,26 @@
+{
+  "reference": "NREL Materials Flow through Industry (MFI) Modeling Tool",
+  "default_energy_multiplier_btu_per_unit": 430.0,
+  "default_materials": {
+    "steel_sheet": {
+      "embodied_energy_btu_per_lb": 14500.0,
+      "embodied_ghg_lb_co2e_per_lb": 1.85
+    },
+    "aluminum_extrusion": {
+      "embodied_energy_btu_per_lb": 85000.0,
+      "embodied_ghg_lb_co2e_per_lb": 9.2
+    },
+    "polyethylene_hdpe": {
+      "embodied_energy_btu_per_lb": 34000.0,
+      "embodied_ghg_lb_co2e_per_lb": 1.9
+    },
+    "concrete": {
+      "embodied_energy_btu_per_lb": 700.0,
+      "embodied_ghg_lb_co2e_per_lb": 0.15
+    },
+    "industrial_water": {
+      "embodied_energy_btu_per_gallon": 12.0,
+      "embodied_ghg_lb_co2e_per_gallon": 0.0018
+    }
+  }
+}
