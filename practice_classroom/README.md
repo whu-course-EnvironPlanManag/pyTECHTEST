@@ -19,18 +19,23 @@
 
 ## 🌿 Git 分支工作流指引 (Student Git Workflow)
 
-遵循软件工程与团队协作规范（参考 `agency-agents` 的 Git Workflow Master 最佳实践），**严禁直接向 `main` 分支提交任何个人修改**。所有练习必须在独立个人分支上完成。
+遵循现代开源工程协作规范，**严禁直接向 `main` 主分支提交任何个人修改**。
 
-### 步骤 1：克隆代码仓并检出个人实训分支
+> 📢 **随堂选做规则**：每位同学在 `practice_classroom/` 中**任选一个 Case（案例一或案例二）进行分支创建与练习**，完成后通过 GitHub 发起 Pull Request 提交。
+
+### 步骤 1：克隆代码仓并任选一个 Case 检出个人分支
 在本地终端执行：
 ```bash
-# 克隆代码仓
+# 克隆代码仓 (默认处于 main 分支)
 git clone https://github.com/whu-course-EnvironPlanManag/pyTECHTEST.git
 cd pyTECHTEST
 
 # 规范分支命名格式：student/<学号>-<姓名拼音>-<case1/case2>
-# 例如：
-git checkout -b student/2023300000-zhangsan-case1
+# 示例 A（选做案例一）：
+git checkout -b student/2023300001-zhangsan-case1
+
+# 示例 B（选做案例二）：
+git checkout -b student/2023300002-lisi-case2
 ```
 
 ### 步骤 2：完成指定案例的配置与计算

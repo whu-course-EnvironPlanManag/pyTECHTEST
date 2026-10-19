@@ -291,13 +291,15 @@ pytechtest grid -s net_zero
 
 本实训旨在帮助环境工程专业本科生建立**“生命周期评价 (LCA) + 技术经济分析 (TEA) + 工业代码工程化”**的综合规划分析能力。同学们将基于美国能源部（US DOE）官方工业技术评估案例，在 GitHub 协作模式下通过新建个人分支完成指定案例的 Python 化配置、对标计算与自动化验证。
 
+> 📢 **随堂选做规则**：为便于同学们增强对该评估工具实操机制的掌握，**每位同学在 `practice_classroom/` 专区中任选一个 Case（案例一或案例二）进行分支创建与答题练习**。严禁直接在 `main` 主分支上修改代码！
+
 ```mermaid
 graph LR
-    A[main 分支] -->|git checkout -b| B[student/学号-姓名-case1]
-    B -->|补全 student_template.yaml| C[运行 verify_case1.py 自测]
-    C -->|通过| D[git commit 提交修改]
-    D -->|git push| E[推送到 GitHub 远端分支]
-    E -->|Pull Request| F[触发 GitHub Actions CI 自动评分]
+    A[main 分支] -->|任选 Case 检出分支| B[student/学号-姓名拼音-case1 或 case2]
+    B -->|补全 student_template.yaml| C[运行 verify 脚本自测]
+    C -->|100% 对齐| D[git commit 规范提交修改]
+    D -->|git push| E[推送到 GitHub 个人远端分支]
+    E -->|Pull Request| F[触发 GitHub Actions CI 自动测试与评分]
 ```
 
 ---
@@ -306,12 +308,12 @@ graph LR
 
 根据现代开源工程与团队协作规范，**严禁直接修改或向 `main` 分支推送代码**。所有同学必须在个人分支上独立作业。
 
-#### 分支命名规范
-分支名称必须严格遵循以下命名结构：
-- **案例一（余热回收）**：`student/<学号>-<姓名拼音>-case1`  
-  *示例：`student/2023300001-zhangsan-case1`*
-- **案例二（催化剂）**：`student/<学号>-<姓名拼音>-case2`  
-  *示例：`student/2023300001-zhangsan-case2`*
+#### 分支命名规则与示例说明
+每位同学根据自己选做的案例，严格遵循以下命名规则创建分支：
+- **若选择【案例一：工业余热回收系统 (Case 1)】**：`student/<学号>-<姓名拼音>-case1`  
+  *创建示例：`git checkout -b student/2023300001-zhangsan-case1`*
+- **若选择【案例二：先进催化剂合成工艺 (Case 2)】**：`student/<学号>-<姓名拼音>-case2`  
+  *创建示例：`git checkout -b student/2023300002-lisi-case2`*
 
 #### 规范化提交信息 (Conventional Commits)
 每次提交应使用规范的 Git Commit Message：
@@ -327,7 +329,7 @@ graph LR
 #### 第一步：克隆代码仓与环境初始化
 打开终端（或 Anaconda Prompt），进入工作目录：
 ```bash
-# 1. 克隆教学仓库
+# 1. 克隆教学仓库 (默认处于 main 分支)
 git clone https://github.com/whu-course-EnvironPlanManag/pyTECHTEST.git
 cd pyTECHTEST
 
@@ -338,17 +340,27 @@ conda activate pytechtest
 pytest -v tests/
 ```
 
-#### 第二步：检出个人实训分支
-根据你当前练习的案例，新建并切换至个人实训分支：
-```bash
-# 以练习案例 1 为例：
-git checkout -b student/2023300001-zhangsan-case1
-```
+#### 第二步：任选一个 Case 创建个人实训分支 (分支创建示例)
+
+每位同学根据所选案例，直接从本地 `main` 分支检出独立实训分支：
+
+* **选项 A（选择案例一：余热回收冷却）**：
+  ```bash
+  # 示例：学号 2023300001 的张三同学选择案例一：
+  git checkout -b student/2023300001-zhangsan-case1
+  ```
+* **选项 B（选择案例二：先进催化剂合成）**：
+  ```bash
+  # 示例：学号 2023300002 的李四同学选择案例二：
+  git checkout -b student/2023300002-lisi-case2
+  ```
 
 #### 第三步：查阅官方 Excel 并补全对应配置
 
-##### 【案例一：工业余热回收系统练习 (Case 1)】
-- **参考 Excel**：打开 `data/excel_templates/Example TECHTEST 1.0 Waste Heat Recovery (Process).xlsx`；
+根据你在第二步选择的案例，进入对应目录完成编写与自测：
+
+##### 【若选择案例一：工业余热回收系统练习 (Case 1)】
+- **参考 Excel**：打开本仓内置的 [`practice_classroom/TECHTEST_tool-Conceived-by-USDOE/Example TECHTEST 1.0 Waste Heat Recovery (Process).xlsx`](practice_classroom/TECHTEST_tool-Conceived-by-USDOE/Example%20TECHTEST%201.0%20Waste%20Heat%20Recovery%20(Process).xlsx)；
 - **答题文件**：编辑 [`practice_classroom/case1_waste_heat/student_template.yaml`](practice_classroom/case1_waste_heat/student_template.yaml)；
 - **重点考查**：
   1. 设备购置 CapEx 与 5% 年化维护费的折旧积分；
@@ -359,8 +371,8 @@ git checkout -b student/2023300001-zhangsan-case1
   python practice_classroom/case1_waste_heat/verify_case1.py
   ```
 
-##### 【案例二：先进催化剂合成练习 (Case 2)】
-- **参考 Excel**：打开 `data/excel_templates/TECHTEST 1.0 Manufacturilium Catalyst.xlsx`；
+##### 【若选择案例二：先进催化剂合成练习 (Case 2)】
+- **参考 Excel**：打开本仓内置的 [`practice_classroom/TECHTEST_tool-Conceived-by-USDOE/TECHTEST 1.0 Manufacturilium Catalyst.xlsx`](practice_classroom/TECHTEST_tool-Conceived-by-USDOE/TECHTEST%201.0%20Manufacturilium%20Catalyst.xlsx)；
 - **答题文件**：编辑 [`practice_classroom/case2_catalyst/student_template.yaml`](practice_classroom/case2_catalyst/student_template.yaml)；
 - **重点考查**：
   1. **非等量替代比（Equivalence Ratio）**：理解为何 10 kg 新催化剂等效替代 13.5 kg 传统催化剂，折算系数应设定为 `1.35`；
@@ -378,10 +390,11 @@ git status
 
 # 2. 提交修改
 git add practice_classroom/
-git commit -m "feat(case1): complete waste heat recovery by <姓名>"
+git commit -m "feat(case1): complete waste heat recovery by 张三"
+# 或 git commit -m "feat(case2): complete catalyst synthesis by 李四"
 
 # 3. 推送至个人远端分支
-git push -u origin student/2023300001-zhangsan-case1
+git push -u origin student/<学号>-<姓名拼音>-<case1/case2>
 ```
 4. 打开 GitHub 页面，点击 **Compare & pull request**，填写实训自查清单后提交 PR。
 
