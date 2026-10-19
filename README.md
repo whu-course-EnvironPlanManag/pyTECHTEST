@@ -34,7 +34,7 @@ pyTECHTEST/
 ├── LICENSE                       # MIT 开源授权协议
 ├── README.md                     # 本说明文档与实训指导手册
 │
-├── practice/                     # 🌟 学生分支练习实训专区
+├── practice_classroom/           # 🌟 学生分支练习实训专区
 │   ├── README.md                 # 实训任务说明与自测规范
 │   ├── case1_waste_heat/         # 案例一：工业余热回收模型练习
 │   │   ├── README.md             # 案例一参数映射说明与对标目标
@@ -348,25 +348,25 @@ git checkout -b student/2023300001-zhangsan-case1
 
 ##### 【案例一：工业余热回收系统练习 (Case 1)】
 - **参考 Excel**：打开 `data/excel_templates/Example TECHTEST 1.0 Waste Heat Recovery (Process).xlsx`；
-- **答题文件**：编辑 [`practice/case1_waste_heat/student_template.yaml`](practice/case1_waste_heat/student_template.yaml)；
+- **答题文件**：编辑 [`practice_classroom/case1_waste_heat/student_template.yaml`](practice_classroom/case1_waste_heat/student_template.yaml)；
 - **重点考查**：
   1. 设备购置 CapEx 与 5% 年化维护费的折旧积分；
   2. 操作工 FTE 与 72% 综合福利间接费率的人工 OpEx 计算；
   3. 电力单耗（基准 3,758.4 kWh vs. 新技术 1,548.8 kWh）对生命周期碳强度的贡献；
 - **自测命令**：
   ```bash
-  python practice/case1_waste_heat/verify_case1.py
+  python practice_classroom/case1_waste_heat/verify_case1.py
   ```
 
 ##### 【案例二：先进催化剂合成练习 (Case 2)】
 - **参考 Excel**：打开 `data/excel_templates/TECHTEST 1.0 Manufacturilium Catalyst.xlsx`；
-- **答题文件**：编辑 [`practice/case2_catalyst/student_template.yaml`](practice/case2_catalyst/student_template.yaml)；
+- **答题文件**：编辑 [`practice_classroom/case2_catalyst/student_template.yaml`](practice_classroom/case2_catalyst/student_template.yaml)；
 - **重点考查**：
   1. **非等量替代比（Equivalence Ratio）**：理解为何 10 kg 新催化剂等效替代 13.5 kg 传统催化剂，折算系数应设定为 `1.35`；
   2. **原材料副产物回收抵扣（Credit）**：在 `materials` 清单中填报 `unit_price: -500.0` 负单价抵扣项；
 - **自测命令**：
   ```bash
-  python practice/case2_catalyst/verify_case2.py
+  python practice_classroom/case2_catalyst/verify_case2.py
   ```
 
 #### 第四步：提交代码并创建 Pull Request
@@ -376,7 +376,7 @@ git checkout -b student/2023300001-zhangsan-case1
 git status
 
 # 2. 提交修改
-git add practice/
+git add practice_classroom/
 git commit -m "feat(case1): complete waste heat recovery by <姓名>"
 
 # 3. 推送至个人远端分支

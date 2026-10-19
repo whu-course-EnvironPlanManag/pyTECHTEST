@@ -2,7 +2,7 @@ name: CI Test Suite
 
 on:
   push:
-    branches: [ main, 'practice/**', 'student/**' ]
+    branches: [ main, 'practice/**', 'practice_classroom/**', 'student/**' ]
   pull_request:
     branches: [ main ]
 

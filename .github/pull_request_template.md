@@ -4,15 +4,15 @@
 - **姓名**：
 - **学号**：
 - **练习案例**：
-  - [ ] 案例 1：工业余热回收模型 (`practice/case1_waste_heat/`)
-  - [ ] 案例 2：先进催化剂非等量替代与抵扣模型 (`practice/case2_catalyst/`)
+  - [ ] 案例 1：工业余热回收模型 (`practice_classroom/case1_waste_heat/`)
+  - [ ] 案例 2：先进催化剂非等量替代与抵扣模型 (`practice_classroom/case2_catalyst/`)
 
 ---
 
 ### 2. 本地自测验证结果 (请附上终端运行输出或勾选)
 - [ ] 运行 `pytest -v tests/` 全部通过 (17/17 passed)
-- [ ] 案例 1 本地对标验证通过 (`python practice/case1_waste_heat/verify_case1.py`)
-- [ ] 案例 2 本地对标验证通过 (`python practice/case2_catalyst/verify_case2.py`)
+- [ ] 案例 1 本地对标验证通过 (`python practice_classroom/case1_waste_heat/verify_case1.py`)
+- [ ] 案例 2 本地对标验证通过 (`python practice_classroom/case2_catalyst/verify_case2.py`)
 
 #### 核心指标对标表 (学生计算值 vs. DOE 官方基准值)
 | 指标名称 | DOE 官方基准值 | 我的计算值 | 相对偏差 (%) |

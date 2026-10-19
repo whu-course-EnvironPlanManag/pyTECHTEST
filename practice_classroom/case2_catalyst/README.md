@@ -45,6 +45,6 @@
 ## 4. 本地运行验证
 在补全 `student_template.yaml` 后，在当前目录运行自测脚本：
 ```bash
-python practice/case2_catalyst/verify_case2.py
+python practice_classroom/case2_catalyst/verify_case2.py
 ```
 若完全通过，即可提交至个人 Git 分支！

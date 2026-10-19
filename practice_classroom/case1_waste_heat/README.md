@@ -34,6 +34,6 @@
 ## 4. 本地运行验证
 在补全 `student_template.yaml` 后，在当前目录运行自测脚本：
 ```bash
-python practice/case1_waste_heat/verify_case1.py
+python practice_classroom/case1_waste_heat/verify_case1.py
 ```
 若完全通过，即可提交至个人 Git 分支！

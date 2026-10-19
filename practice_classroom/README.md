@@ -34,17 +34,17 @@ git checkout -b student/2023300000-zhangsan-case1
 ```
 
 ### 步骤 2：完成指定案例的配置与计算
-- **练习案例一**：进入 [`practice/case1_waste_heat/`](case1_waste_heat/)，阅读该目录下的 `README.md`，根据提示补全 `student_template.yaml` 中的 `# TODO` 项；
-- **练习案例二**：进入 [`practice/case2_catalyst/`](case2_catalyst/)，阅读该目录下的 `README.md`，补全 `student_template.yaml` 中的非等量折算比与副产物回收抵扣项。
+- **练习案例一**：进入 [`practice_classroom/case1_waste_heat/`](case1_waste_heat/)，阅读该目录下的 `README.md`，根据提示补全 `student_template.yaml` 中的 `# TODO` 项；
+- **练习案例二**：进入 [`practice_classroom/case2_catalyst/`](case2_catalyst/)，阅读该目录下的 `README.md`，补全 `student_template.yaml` 中的非等量折算比与副产物回收抵扣项。
 
 ### 步骤 3：本地执行自测验证脚本
 在完成配置文件编写后，运行对应的验证脚本进行即时评测：
 ```bash
 # 验证案例 1：
-python practice/case1_waste_heat/verify_case1.py
+python practice_classroom/case1_waste_heat/verify_case1.py
 
 # 验证案例 2：
-python practice/case2_catalyst/verify_case2.py
+python practice_classroom/case2_catalyst/verify_case2.py
 
 # 运行全量单元测试套件：
 pytest -v tests/
