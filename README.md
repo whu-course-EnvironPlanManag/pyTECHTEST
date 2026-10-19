@@ -295,7 +295,7 @@ pytechtest grid -s net_zero
 
 ```mermaid
 graph LR
-    A[main 分支] -->|任选 Case 检出分支| B[student/学号-姓名拼音-case1 或 case2]
+    A[main 分支] -->|任选 Case 检出分支| B[student/firstname-lastname-case1 或 case2]
     B -->|补全 student_template.yaml| C[运行 verify 脚本自测]
     C -->|100% 对齐| D[git commit 规范提交修改]
     D -->|git push| E[推送到 GitHub 个人远端分支]
@@ -309,11 +309,11 @@ graph LR
 根据现代开源工程与团队协作规范，**严禁直接修改或向 `main` 分支推送代码**。所有同学必须在个人分支上独立作业。
 
 #### 分支命名规则与示例说明
-每位同学根据自己选做的案例，严格遵循以下命名规则创建分支：
-- **若选择【案例一：工业余热回收系统 (Case 1)】**：`student/<学号>-<姓名拼音>-case1`  
-  *创建示例：`git checkout -b student/2023300001-zhangsan-case1`*
-- **若选择【案例二：先进催化剂合成工艺 (Case 2)】**：`student/<学号>-<姓名拼音>-case2`  
-  *创建示例：`git checkout -b student/2023300002-lisi-case2`*
+由于当前仓库为公开开源（Public），为保护学生个人隐私，**分支命名中统一不包含学号**，统一按照 `student/firstname-lastname-case1/case2` 格式命名（全小写拼音或英文）：
+- **若选择【案例一：工业余热回收系统 (Case 1)】**：`student/firstname-lastname-case1`  
+  *创建示例（如张三同学 San Zhang）：`git checkout -b student/san-zhang-case1`*
+- **若选择【案例二：先进催化剂合成工艺 (Case 2)】**：`student/firstname-lastname-case2`  
+  *创建示例（如李四同学 Si Li）：`git checkout -b student/si-li-case2`*
 
 #### 规范化提交信息 (Conventional Commits)
 每次提交应使用规范的 Git Commit Message：
@@ -346,13 +346,13 @@ pytest -v tests/
 
 * **选项 A（选择案例一：余热回收冷却）**：
   ```bash
-  # 示例：学号 2023300001 的张三同学选择案例一：
-  git checkout -b student/2023300001-zhangsan-case1
+  # 示例：张三同学（San Zhang）选择案例一：
+  git checkout -b student/san-zhang-case1
   ```
 * **选项 B（选择案例二：先进催化剂合成）**：
   ```bash
-  # 示例：学号 2023300002 的李四同学选择案例二：
-  git checkout -b student/2023300002-lisi-case2
+  # 示例：李四同学（Si Li）选择案例二：
+  git checkout -b student/si-li-case2
   ```
 
 #### 第三步：查阅官方 Excel 并补全对应配置
@@ -390,11 +390,11 @@ git status
 
 # 2. 提交修改
 git add practice_classroom/
-git commit -m "feat(case1): complete waste heat recovery by 张三"
-# 或 git commit -m "feat(case2): complete catalyst synthesis by 李四"
+git commit -m "feat(case1): complete waste heat recovery by San Zhang"
+# 或 git commit -m "feat(case2): complete catalyst synthesis by Si Li"
 
 # 3. 推送至个人远端分支
-git push -u origin student/<学号>-<姓名拼音>-<case1/case2>
+git push -u origin student/<firstname-lastname>-<case1/case2>
 ```
 4. 打开 GitHub 页面，点击 **Compare & pull request**，填写实训自查清单后提交 PR。
 

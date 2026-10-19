@@ -1,8 +1,7 @@
 ## 《环境规划与管理》课程随堂实训提交 (Pull Request)
 
 ### 1. 学生基本信息
-- **姓名**：
-- **学号**：
+- **姓名 (Firstname Lastname)**：
 - **练习案例**：
   - [ ] 案例 1：工业余热回收模型 (`practice_classroom/case1_waste_heat/`)
   - [ ] 案例 2：先进催化剂非等量替代与抵扣模型 (`practice_classroom/case2_catalyst/`)

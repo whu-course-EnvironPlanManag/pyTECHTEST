@@ -30,12 +30,12 @@
 git clone https://github.com/whu-course-EnvironPlanManag/pyTECHTEST.git
 cd pyTECHTEST
 
-# 规范分支命名格式：student/<学号>-<姓名拼音>-<case1/case2>
-# 示例 A（选做案例一）：
-git checkout -b student/2023300001-zhangsan-case1
+# 规范分支命名格式（保护隐私，不含学号）：student/firstname-lastname-case1/case2
+# 示例 A（张三同学 San Zhang 选做案例一）：
+git checkout -b student/san-zhang-case1
 
-# 示例 B（选做案例二）：
-git checkout -b student/2023300002-lisi-case2
+# 示例 B（李四同学 Si Li 选做案例二）：
+git checkout -b student/si-li-case2
 ```
 
 ### 步骤 2：完成指定案例的配置与计算
@@ -58,9 +58,9 @@ pytest -v tests/
 
 ### 步骤 4：提交代码并推送到个人分支
 ```bash
-git add .
-git commit -m "feat(case1): complete waste heat recovery parameters by <姓名>"
-git push -u origin student/<学号>-<姓名拼音>-<case1/case2>
+git add practice_classroom/
+git commit -m "feat(case1): complete waste heat recovery parameters by San Zhang"
+git push -u origin student/<firstname-lastname>-<case1/case2>
 ```
 
 ### 步骤 5：在 GitHub 上发起 Pull Request (PR)
