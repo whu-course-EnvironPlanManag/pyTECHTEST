@@ -40,6 +40,7 @@ def main():
     cost_diff = s.cost_savings_per_ref_volume
     energy_diff = s.energy_savings_per_ref_volume_mmbtu
     ghg_diff = s.emissions_reduction_per_ref_volume_lb
+    payback_years = s.simple_payback_years
 
     # 官方基准目标
     golden_cost = 214.00
@@ -50,16 +51,19 @@ def main():
     print(f"1. 单位成本节约:   学生值 = ${cost_diff:.2f}  | 官方基准 = ${golden_cost:.2f}")
     print(f"2. 初级能耗节约:   学生值 = {energy_diff:.2f} MMBtu | 官方基准 = {golden_energy:.2f} MMBtu")
     print(f"3. 温室气体减排:   学生值 = {ghg_diff:.2f} lb CO2e | 官方基准 = {golden_ghg:.2f} lb CO2e")
+    payback_display = f"{payback_years:.2f} 年" if payback_years is not None else "无法计算"
+    print(f"4. 静态投资回收期: 学生值 = {payback_display} | 验收要求 = 负值")
 
     err_cost = abs(cost_diff - golden_cost) / golden_cost
     err_energy = abs(energy_diff - golden_energy) / golden_energy
     err_ghg = abs(ghg_diff - golden_ghg) / golden_ghg
 
-    if err_cost < 0.001 and err_energy < 0.001 and err_ghg < 0.001:
+    payback_is_negative = payback_years is not None and payback_years < 0
+    if err_cost < 0.001 and err_energy < 0.001 and err_ghg < 0.001 and payback_is_negative:
         print("\n🎉 恭喜！各项指标与美国能源部官方基准严格 100% 对齐！案例一练习顺利完成！")
         print("💡 提示：请执行 git add、git commit 并提交至你的个人实训分支！\n")
     else:
-        print("\n⚠️ 提示：计算结果与官方基准存在偏差，请核对 student_template.yaml 中的填报参数！\n")
+        print("\n⚠️ 提示：计算结果与官方基准或回收期要求存在偏差，请核对 student_template.yaml 中的填报参数！\n")
         sys.exit(1)
 
 

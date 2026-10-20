@@ -17,7 +17,7 @@ project:
 
 market:
   generic_end_use_product: "Cooled Waste Water"
-  annual_us_market_volume: 10000.0   # 美国全国市场规模 (Million Gallons)
+  annual_us_market_volume: 10000.0   # 美国全国市场规模 (Million Gallons)#
   market_units: "Million Gallons"
   target_penetration_fraction: 0.10  # 目标市场渗透率 (10%)
   market_description: "Industrial wastewater cooling in food and beverage plants"
@@ -31,6 +31,12 @@ functional_unit:
   equivalence_ratio: 1.0             # 等效功能替代比 (等量替代为 1.0)
 
 grid_scenario: "2022_default"        # 电网脱碳情景: 2022基准
+
+labor_estimation_defaults:             # Labor Estimation Mini-Tool 共用默认参数（新技术/基准技术）
+  productivity_growth_rate: 0.02       # 年生产率增长率 p
+  years_since_1952: 69                 # n（按 Excel 默认值）
+  supervision_labor_cost_rate: 0.20    # 监督人工成本占运营人工比例
+  fringe_overhead_rate: 0.72           # 福利与间接费率
 
 new_technology:
   annual_facility_production: 730.0
