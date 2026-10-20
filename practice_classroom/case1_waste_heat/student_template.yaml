@@ -37,13 +37,13 @@ new_technology:
   annual_facility_production: 730.0  # Million Gallons/year，CapEx!C15
   capex_maintenance_rate: 0.05       # 每年维护费率为初始 CapEx 的 5%，CapEx!G43
   capex_items:
-    # TODO: [学生任务 1.1] 填入新技术设备的名称、购买价格与寿命
+    # 学生任务 1.1：已核对设备名称、购买价格与寿命
     - name: "Waste Heat Recovery System (e.g. IHP)"
       category: "Process Equipment"
       purchase_price: 254305.5984555985  # 购买原值 ($)，CapEx!E22
       lifetime_years: 10.0               # 设备折旧年限，CapEx!F22
   labor:
-    # TODO: [学生任务 1.2] 填入新技术所需操作工 FTE 与平均年薪
+    # 学生任务 1.2：已核对操作工 FTE、年薪与福利费率
     fte_count: 0.009615384615384616  # OpEx!C22
     average_annual_salary: 75000.0   # OpEx!D22
     fringe_overhead_rate: 0.72       # 综合福利与间接费率 (72%)，OpEx!E22
@@ -67,7 +67,7 @@ new_technology:
       embodied_energy_factor: 19051.1
       embodied_ghg_factor: 0.0
   energy_items:
-    # TODO: [学生任务 1.3] 填入新技术的电力公用工程消耗量 (kWh/ref) 与单价 ($/kWh)
+    # 学生任务 1.3：练习模板电耗值已保留；单位差异见 README，待教师确认
     - energy_source: "Electricity"
       amount_per_ref_volume: 1548.8   # kWh/ref；此为练习配置值，官方 Manufacturing Energy!D17 使用 MMBtu，非同单位直接读数
       unit_price: 0.0718             # $/kWh，EIA Ref Tables!I36
@@ -77,13 +77,13 @@ commercial_benchmark:
   annual_facility_production: 730.0  # Million Gallons/year，CapEx!K15
   capex_maintenance_rate: 0.05       # CapEx!O43
   capex_items:
-    # TODO: [学生任务 1.4] 填入基准技术设备 (4台蒸发冷凝器) 的总购置价与寿命
+    # 学生任务 1.4：已核对基准设备总购置价与寿命
     - name: "Evaporative condensers (4 total)"
       category: "Process Equipment"
       purchase_price: 1000000.0       # 购买原值 ($)，CapEx!M22
       lifetime_years: 25.0            # 设备折旧年限，CapEx!N22
   labor:
-    # TODO: [学生任务 1.5] 填入基准技术操作工 FTE
+    # 学生任务 1.5：已核对基准技术操作工 FTE、年薪与福利费率
     fte_count: 0.03317307692307692   # OpEx!J22
     average_annual_salary: 75000.0   # OpEx!K22
     fringe_overhead_rate: 0.72       # OpEx!L22
@@ -107,7 +107,7 @@ commercial_benchmark:
       embodied_energy_factor: 146912.1
       embodied_ghg_factor: 0.0
   energy_items:
-    # TODO: [学生任务 1.6] 填入基准技术的电力公用工程消耗量 (kWh/ref)
+    # 学生任务 1.6：练习模板电耗值已保留；单位差异见 README，待教师确认
     - energy_source: "Electricity"
       amount_per_ref_volume: 3758.4   # kWh/ref；此为练习配置值，官方 Manufacturing Energy!N17 使用 MMBtu，非同单位直接读数
       unit_price: 0.0718
