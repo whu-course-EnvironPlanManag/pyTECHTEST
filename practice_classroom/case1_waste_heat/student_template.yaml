@@ -7,7 +7,7 @@ project:
   title: "Waste Heat Recovery Cooling in Beverage Manufacturing"
   lead_organization: "Hypothetical Organization"
   partners: "Staff"
-  principal_investigator: "John Doe"
+  principal_investigator: "Feiyang Zeng"
   pi_organization: "Hypothetical National Laboratory"
   technology_manager: "Jane Doe"
   start_date: "2023-01-01"
@@ -109,5 +109,6 @@ commercial_benchmark:
     # TODO: [学生任务 1.6] 填入基准技术的电力公用工程消耗量 (kWh/ref)
     - energy_source: "Electricity"
       amount_per_ref_volume: 3758.4   # kWh
-      unit_price: 0.0718
+      unit_price: 0.0718             # $/kWh
   other_recurring_opex: 0.0
+
