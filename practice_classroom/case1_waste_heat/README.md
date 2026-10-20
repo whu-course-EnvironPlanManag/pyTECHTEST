@@ -4,7 +4,7 @@
 
 本练习采用美国能源部（US DOE）饮料制造废水冷却案例，对比余热回收热泵与蒸发式冷凝器。配置文件为 [`student_template.yaml`](student_template.yaml)，参考工作簿为 [`Example TECHTEST 1.0 Waste Heat Recovery (Process).xlsx`](../TECHTEST_tool-Conceived-by-USDOE/Example%20TECHTEST%201.0%20Waste%20Heat%20Recovery%20(Process).xlsx)。
 
-YAML 中已有参数与工作簿逐项核对，来源单元格已注释在配置旁。`John Doe` 是工作簿 `Project Basics & Benchmarks!C10` 中的示例项目负责人，不是学生姓名。参数数值在仓库原始模板中已存在；本分支补充了来源注释，没有改动参数数值。
+学生任务 1.1–1.6 对应的设备投资、人工和电耗字段均已在 YAML 中填写并通过案例自测。参数来源单元格已注释在配置旁。`John Doe` 是工作簿 `Project Basics & Benchmarks!C10` 中的示例项目负责人，不是学生姓名。数值在仓库原始模板中已存在；本次提交核对并说明了配置，没有擅自改动数值。
 
 | 参数 | 案例值 | 工作簿来源 |
 |---|---:|---|
