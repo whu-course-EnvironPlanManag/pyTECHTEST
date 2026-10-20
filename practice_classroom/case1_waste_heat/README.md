@@ -39,7 +39,7 @@ python practice_classroom/case1_waste_heat/verify_case1.py
 若完全通过，即可提交至个人 Git 分支！
 
 ### 本次运行结果记录
-本次验证时，`student_template.yaml` 中的案例参数已填写完整，因此无需重复修改配置。运行 `verify_case1.py` 后，实际结果与美国能源部基准一致：
+本次将 `student_template.yaml` 中已有参数与官方示例工作簿逐项核对，并在配置旁补充了来源工作表和单元格注释；数值保持不变。`John Doe` 对应工作簿 `Project Basics & Benchmarks!C10` 的示例项目负责人，不是学生姓名。运行 `verify_case1.py` 后，实际结果与美国能源部基准一致：
 
 | 指标（每功能单位） | 商业基准 | 余热回收新技术 | 节约 / 减排 |
 | :--- | ---: | ---: | ---: |
@@ -48,3 +48,5 @@ python practice_classroom/case1_waste_heat/verify_case1.py
 | 生命周期温室气体排放 | 1,392.55 lb CO2e | 573.85 lb CO2e | 818.69 lb CO2e（58.79%） |
 
 成本节约中，运营支出减少 $172.09，资本支出折旧减少 $41.91。结果表明，该案例的减排效果与电力消耗下降相吻合；新技术设备投资也低于基准方案，模型给出的简单静态回收期为 -11.87 年。
+
+**数据单位核对说明**：YAML 中电耗字段以 `kWh/ref` 表示，而官方工作簿 `Manufacturing Energy!D17` 和 `N17` 的数值以 `MMBtu/ref` 表示，因此不把两组值说成直接抄录或擅自换算；本次保留了仓库练习模板原有电耗值。案例文件中未发现概率分布、置信区间或蒙特卡洛不确定性分析；仓库教学 Notebook 展示的是电价和电网情景的确定性敏感性扫描，两者不等同。
