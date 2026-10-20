@@ -4,9 +4,9 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python: 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
 
-**课程名称**：《环境规划与管理》（本科核心课程）  
-**代码仓库**：[whu-course-EnvironPlanManag/pyTECHTEST](https://github.com/whu-course-EnvironPlanManag/pyTECHTEST)  
-**版本标识**：`v1.0.0 (Production & Education Ready)`  
+**课程名称**：《环境规划与管理》（本科核心课程）
+**代码仓库**：[whu-course-EnvironPlanManag/pyTECHTEST](https://github.com/whu-course-EnvironPlanManag/pyTECHTEST)
+**版本标识**：`v1.0.0 (Production & Education Ready)`
 
 ---
 
@@ -16,7 +16,7 @@
 
 原模型以 25 张工作表的复杂 Excel 模板分发，虽功能详尽，但在多参数不确定性分析、蒙特卡洛敏感性扫描以及环境规划多方案比选中存在界面耦合严重、自动化困难等瓶颈。
 
-本项目严格遵照 **Clean Architecture**、**领域驱动设计（DDD）** 及解耦原则，将 US DOE TECHTEST 1.0 原版 25 张工作表的完整计算图网、7 大参考数据库以及 3 大迷你分析工具全量工程化为纯 Python 代码体系。**全量保留所有计算逻辑，严禁任何自我简化与编造**。
+本项目严格遵照 **Clean Architecture**、**领域驱动设计（DDD）** 及解耦原则，将 US DOE TECHTEST 1.0 原版 25 张工作表的完整计算图网、7 大参考数据库以及 3 大迷你分析工具全量工程化为纯 Python 代码体系。
 
 ---
 
@@ -120,7 +120,9 @@ pyTECHTEST/
 Conda（Anaconda 或 Miniconda）能够跨平台管理 Python 版本与底层依赖，避免与系统的全局环境产生包版本冲突。
 
 #### 途径 A：通过 `environment.yml` 一键创建虚拟环境（极简高效）
+
 打开终端（Terminal）或 Anaconda Prompt，进入本项目根目录 `Python_TECHTEST_USDOE`，执行：
+
 ```bash
 # 1. 根据环境配置文件自动创建虚拟环境 pytechtest 并安装所有依赖与 Jupyter 内核
 conda env create -f environment.yml
@@ -134,7 +136,9 @@ pytest -v tests/
 ```
 
 #### 途径 B：手动命令行逐步创建并以可编辑模式（Editable Mode）安装
+
 如果希望自主指定 Python 版本或使用国内镜像加速源，可按以下步骤操作：
+
 ```bash
 # 1. 创建全新的 Python 3.10 或 3.11 独立环境
 conda create -n pytechtest python=3.10 -y
@@ -194,7 +198,9 @@ from pytechtest import TechTestFullEngine, TechTestReporter
 ## 4. 运行与验证工作流 (Classroom Workflow)
 
 ### 4.1 独立案例脚本直接执行
+
 进入 `Python_TECHTEST_USDOE` 根目录下，直接执行：
+
 ```bash
 # 1. 运行案例 1 (工业余热回收模型，原版 Example 1 对标)
 python examples/waste_heat_recovery.py
@@ -207,12 +213,15 @@ python examples/rapid_assessment_demo.py
 ```
 
 ### 4.2 自动化回归测试套件 (17 个用例 100% 通过)
+
 ```bash
 pytest -v tests/
 ```
 
 ### 4.3 命令行工具 (CLI) 快速交互
+
 本项目提供了开箱即用的命令行工具（已配置双指令别名，支持 `pytechtest` 或 `python cli.py` 调用）：
+
 ```bash
 # 查看帮助
 pytechtest --help
@@ -309,14 +318,17 @@ graph LR
 根据现代开源工程与团队协作规范，**严禁直接修改或向 `main` 分支推送代码**。所有同学必须在个人分支上独立作业。
 
 #### 分支命名规则与示例说明
+
 由于当前仓库为公开开源（Public），为保护学生个人隐私，**分支命名中统一不包含学号**，统一按照 `student/firstname-lastname-case1/case2` 格式命名（全小写拼音或英文）：
-- **若选择【案例一：工业余热回收系统 (Case 1)】**：`student/firstname-lastname-case1`  
-  *创建示例（如张三同学 San Zhang）：`git checkout -b student/san-zhang-case1`*
-- **若选择【案例二：先进催化剂合成工艺 (Case 2)】**：`student/firstname-lastname-case2`  
+
+- **若选择【案例一：工业余热回收系统 (Case 1)】**：`student/firstname-lastname-case1`*创建示例（如张三同学 San Zhang）：`git checkout -b student/san-zhang-case1`*
+- **若选择【案例二：先进催化剂合成工艺 (Case 2)】**：`student/firstname-lastname-case2`
   *创建示例（如李四同学 Si Li）：`git checkout -b student/si-li-case2`*
 
 #### 规范化提交信息 (Conventional Commits)
+
 每次提交应使用规范的 Git Commit Message：
+
 - 新增/填报配置：`feat(case1): complete waste heat recovery input parameters`
 - 修改/调试配置：`fix(case2): correct equivalence ratio to 1.35`
 - 运行验证/测试：`test(case1): verify calculation against US DOE benchmark`
@@ -327,7 +339,9 @@ graph LR
 ### 8.2 随堂实战操作四部曲
 
 #### 第一步：克隆代码仓与环境初始化
+
 打开终端（或 Anaconda Prompt），进入工作目录：
+
 ```bash
 # 1. 克隆教学仓库 (默认处于 main 分支)
 git clone https://github.com/whu-course-EnvironPlanManag/pyTECHTEST.git
@@ -360,7 +374,8 @@ pytest -v tests/
 根据你在第二步选择的案例，进入对应目录完成编写与自测：
 
 ##### 【若选择案例一：工业余热回收系统练习 (Case 1)】
-- **参考 Excel**：打开本仓内置的 [`practice_classroom/TECHTEST_tool-Conceived-by-USDOE/Example TECHTEST 1.0 Waste Heat Recovery (Process).xlsx`](practice_classroom/TECHTEST_tool-Conceived-by-USDOE/Example%20TECHTEST%201.0%20Waste%20Heat%20Recovery%20(Process).xlsx)；
+
+- **参考 Excel**：打开本仓内置的 [`practice_classroom/TECHTEST_tool-Conceived-by-USDOE/Example TECHTEST 1.0 Waste Heat Recovery (Process).xlsx`](<practice_classroom/TECHTEST_tool-Conceived-by-USDOE/Example%20TECHTEST%201.0%20Waste%20Heat%20Recovery%20(Process).xlsx>)；
 - **答题文件**：编辑 [`practice_classroom/case1_waste_heat/student_template.yaml`](practice_classroom/case1_waste_heat/student_template.yaml)；
 - **重点考查**：
   1. 设备购置 CapEx 与 5% 年化维护费的折旧积分；
@@ -372,7 +387,8 @@ pytest -v tests/
   ```
 
 ##### 【若选择案例二：先进催化剂合成练习 (Case 2)】
-- **参考 Excel**：打开本仓内置的 [`practice_classroom/TECHTEST_tool-Conceived-by-USDOE/TECHTEST 1.0 Manufacturilium Catalyst.xlsx`](practice_classroom/TECHTEST_tool-Conceived-by-USDOE/TECHTEST%201.0%20Manufacturilium%20Catalyst.xlsx)；
+
+- **参考 Excel**：打开本仓内置的 [`practice_classroom/TECHTEST_tool-Conceived-by-USDOE/TECHTEST 1.0 Manufacturilium Catalyst.xlsx`](<practice_classroom/TECHTEST_tool-Conceived-by-USDOE/TECHTEST%201.0%20Manufacturilium%20Catalyst.xlsx>)；
 - **答题文件**：编辑 [`practice_classroom/case2_catalyst/student_template.yaml`](practice_classroom/case2_catalyst/student_template.yaml)；
 - **重点考查**：
   1. **非等量替代比（Equivalence Ratio）**：理解为何 10 kg 新催化剂等效替代 13.5 kg 传统催化剂，折算系数应设定为 `1.35`；
@@ -383,7 +399,9 @@ pytest -v tests/
   ```
 
 #### 第四步：提交代码并创建 Pull Request
+
 当自测验证输出 `🎉 恭喜！各项指标与美国能源部官方基准严格 100% 对齐！` 后：
+
 ```bash
 # 1. 查看暂存状态
 git status
@@ -396,6 +414,7 @@ git commit -m "feat(case1): complete waste heat recovery by San Zhang"
 # 3. 推送至个人远端分支
 git push -u origin student/<firstname-lastname>-<case1/case2>
 ```
+
 4. 打开 GitHub 页面，点击 **Compare & pull request**，填写实训自查清单后提交 PR。
 
 ---
@@ -403,6 +422,7 @@ git push -u origin student/<firstname-lastname>-<case1/case2>
 ### 8.3 自动化测试与评分规则 (GitHub Actions CI)
 
 当你的 PR 提交后，GitHub 自动化 CI 流水线将在云端自动运行 `pytest -v tests/`：
+
 - **测试通过（Green Checkmark ✅）**：表明计算模型完全符合美国能源部数值基准，代码格式规范；
 - **测试失败（Red Cross ❌）**：点击进入 Actions 详情查看具体的失败项（如成本偏差过大、材料缺少抵扣项等），在本地分支修改后再次 `git commit` 并 `git push`，云端测试将自动重新评估。
 
@@ -410,12 +430,7 @@ git push -u origin student/<firstname-lastname>-<case1/case2>
 
 ### 8.4 常见问题与排错指南 (FAQ)
 
-1. **Q: 为什么运行 `verify_case1.py` 时提示找不到模块？**  
-   A: 请确认当前是否位于工程根目录 `pyTECHTEST/`，并已激活正确的 Conda 虚拟环境（`conda activate pytechtest`）。
-2. **Q: 为什么案例 2 的成本节约总是算出来不对？**  
-   A: 请重点检查：① `functional_unit.equivalence_ratio` 是否设置为了 `1.35`；② 是否在 `new_technology.materials` 中正确添加了 `unit_price: -500.0` 的副产物回收抵扣项。
-3. **Q: 如何查看原版 Excel 详细公式与单元格对应？**  
+1. **Q: 为什么运行 `verify_case1.py` 时提示找不到模块？**A: 请确认当前是否位于工程根目录 `pyTECHTEST/`，并已激活正确的 Conda 虚拟环境（`conda activate pytechtest`）。
+2. **Q: 为什么案例 2 的成本节约总是算出来不对？**A: 请重点检查：① `functional_unit.equivalence_ratio` 是否设置为了 `1.35`；② 是否在 `new_technology.materials` 中正确添加了 `unit_price: -500.0` 的副产物回收抵扣项。
+3. **Q: 如何查看原版 Excel 详细公式与单元格对应？**
    A: 本仓库在 `data/excel_templates/` 目录中完整内置了 US DOE 官方分发的原版工作簿，可随时在 Excel 中打开对照。
-
-
-
