@@ -32,6 +32,12 @@ functional_unit:
 
 grid_scenario: "2022_default"        # 电网脱碳情景: 2022基准
 
+labor_estimation_defaults:             # Labor Estimation Mini-Tool 共用默认参数（新技术/基准技术）
+  productivity_growth_rate: 0.02       # 年生产率增长率 p
+  years_since_1952: 69                 # n（按 Excel 默认值）
+  supervision_labor_cost_rate: 0.20    # 监督人工成本占运营人工比例
+  fringe_overhead_rate: 0.72           # 福利与间接费率
+
 new_technology:
   annual_facility_production: 730.0
   capex_maintenance_rate: 0.05       # 每年维护费率为初始 CapEx 的 5%
