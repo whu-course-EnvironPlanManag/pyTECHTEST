@@ -17,7 +17,7 @@ project:
 
 market:
   generic_end_use_product: "Cooled Waste Water"
-  annual_us_market_volume: 10000.0   # 美国全国市场规模 (Million Gallons)
+  annual_us_market_volume: 10000.0   # 美国全国市场规模 (Million Gallons)#
   market_units: "Million Gallons"
   target_penetration_fraction: 0.10  # 目标市场渗透率 (10%)
   market_description: "Industrial wastewater cooling in food and beverage plants"
