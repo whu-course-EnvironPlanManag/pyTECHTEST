@@ -52,19 +52,19 @@ new_technology:
       unit: "kg"
       unit_price: 5.545
       embodied_energy_factor: 94781.7
-      embodied_ghg_factor: 0.0
+      embodied_ghg_factor: 5.545
     - name: "Low alloyed steel"
       amount_per_ref_volume: 0.32113972602739727
       unit: "kg"
       unit_price: 1.37
       embodied_energy_factor: 19051.124118
-      embodied_ghg_factor: 0.0
+      embodied_ghg_factor: 1.37
     - name: "Reinforced Steel"
       amount_per_ref_volume: 1.3046301369863014
       unit: "kg"
       unit_price: 1.37
       embodied_energy_factor: 19051.1
-      embodied_ghg_factor: 0.0
+      embodied_ghg_factor: 1.37
   energy_items:
     # TODO: [学生任务 1.3] 填入新技术的电力公用工程消耗量 (kWh/ref) 与单价 ($/kWh)
     - energy_source: "Electricity"
@@ -92,19 +92,19 @@ commercial_benchmark:
       unit: "kg"
       unit_price: 1.37
       embodied_energy_factor: 19051.1
-      embodied_ghg_factor: 0.0
+      embodied_ghg_factor: 1.37
     - name: "Stainless Steel"
       amount_per_ref_volume: 0.34946466844392127
       unit: "kg"
       unit_price: 6.15
       embodied_energy_factor: 53741.394
-      embodied_ghg_factor: 0.0
+      embodied_ghg_factor: 6.15
     - name: "Aluminium"
       amount_per_ref_volume: 0.39875731544863013
       unit: "kg"
       unit_price: 9.16
       embodied_energy_factor: 146912.1
-      embodied_ghg_factor: 0.0
+      embodied_ghg_factor: 9.16
   energy_items:
     # TODO: [学生任务 1.6] 填入基准技术的电力公用工程消耗量 (kWh/ref)
     - energy_source: "Electricity"
