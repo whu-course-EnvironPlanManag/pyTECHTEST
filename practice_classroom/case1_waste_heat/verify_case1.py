@@ -48,15 +48,20 @@ def main():
     golden_ghg = 818.69
 
     print("\n--- 🎯 与美国能源部官方基准对齐校验 ---")
-    print(f"1. 单位成本节约:   学生值 = ${cost_diff:.2f}  | 官方基准 = ${golden_cost:.2f}")
-    print(f"2. 初级能耗节约:   学生值 = {energy_diff:.2f} MMBtu | 官方基准 = {golden_energy:.2f} MMBtu")
-    print(f"3. 温室气体减排:   学生值 = {ghg_diff:.2f} lb CO2e | 官方基准 = {golden_ghg:.2f} lb CO2e")
-    payback_display = f"{payback_years:.2f} 年" if payback_years is not None else "无法计算"
+    print(f"1. 单位成本节约:   学生值 = ${cost_diff:.6f}  | 官方基准 = ${golden_cost:.2f}")
+    print(f"2. 初级能耗节约:   学生值 = {energy_diff:.6f} MMBtu | 官方基准 = {golden_energy:.2f} MMBtu")
+    print(f"3. 温室气体减排:   学生值 = {ghg_diff:.6f} lb CO2e | 官方基准 = {golden_ghg:.2f} lb CO2e")
+    payback_display = f"{payback_years:.6f} 年" if payback_years is not None else "无法计算"
     print(f"4. 静态投资回收期: 学生值 = {payback_display} | 验收要求 = 负值")
 
     err_cost = abs(cost_diff - golden_cost) / golden_cost
     err_energy = abs(energy_diff - golden_energy) / golden_energy
     err_ghg = abs(ghg_diff - golden_ghg) / golden_ghg
+
+    print("\n--- 📊 相对官方基准偏差 ---")
+    print(f"1. 单位成本节约相对偏差: {err_cost:.6%}")
+    print(f"2. 初级能耗节约相对偏差: {err_energy:.6%}")
+    print(f"3. 温室气体减排相对偏差: {err_ghg:.6%}")
 
     payback_is_negative = payback_years is not None and payback_years < 0
     if err_cost < 0.001 and err_energy < 0.001 and err_ghg < 0.001 and payback_is_negative:
